@@ -8,7 +8,7 @@ const searchSong = () => {
 }
 const displaySongs = (songs)=>{
     const songContainer = document.getElementById('song-container');
-    songContainer = "";
+    songContainer.innerHTML ="";
     songs.forEach(song =>{
         const songDiv = document.createElement('div');
         songDiv.className ='single-result row align-items-center my-3 p-3'
